@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://www.lori.tw/css/player.css">
+
+<div id="QPlayer" style="z-index:2016">
+<div id="pContent">
+<div id="player">
+<span class="cover" title="点击开启随机播放"></span>
+<div class="ctrl">
+<div class="musicTag marquee">
+<strong>Title</strong>
+<span> - </span>
+<span class="artist">Artist</span>
+</div>
+<div class="progress">
+						<div class="timer left">0:00</div>
+						<div class="contr">
+							<div class="rewind icon"></div>
+							<div class="playback icon"></div>
+							<div class="fastforward icon"></div>
+						</div>
+						<div class="right">
+							<div class="liebiao icon"></div>
+						</div>
+					</div>
+</div>
+</div>
+<div class="ssBtn">
+<div class="adf"></div>
+</div>
+</div>
+<ol id="playlist"></ol>
+</div>
+<script src="https://www.lori.tw/js/jquery-3.3.1.min.js"></script>
+<script src="https://www.lori.tw/js/jquery.marquee.min.js"></script>
+
+<script>
+          var autoplay = 1;
+          var playlist = [
+		  {title:"抖音随机热曲1",artist:"Lori",mp3:"https://www.lori.tw/douyin.php",cover:"https://q2.qlogo.cn/headimg_dl?bs=2640341724&dst_uin=2640341724&dst_uin=2640341724&;dst_uin=2640341724&spec=100&url_enc=0&referer=bu_interface&term_type=PC",},
+		  {title:"抖音随机热曲2",artist:"Lori",mp3:"https://www.lori.tw/douyin.php",cover:"https://q2.qlogo.cn/headimg_dl?bs=2640341724&dst_uin=2640341724&dst_uin=2640341724&;dst_uin=2640341724&spec=100&url_enc=0&referer=bu_interface&term_type=PC",},
+		  {title:"抖音随机热曲3",artist:"Lori",mp3:"https://www.lori.tw/douyin.php",cover:"https://q2.qlogo.cn/headimg_dl?bs=2640341724&dst_uin=2640341724&dst_uin=2640341724&;dst_uin=2640341724&spec=100&url_enc=0&referer=bu_interface&term_type=PC",},
+		  {title:"抖音随机热曲4",artist:"Lori",mp3:"https://www.lori.tw/douyin.php",cover:"https://q2.qlogo.cn/headimg_dl?bs=2640341724&dst_uin=2640341724&dst_uin=2640341724&;dst_uin=2640341724&spec=100&url_enc=0&referer=bu_interface&term_type=PC",},
+		  {title:"抖音随机热曲5",artist:"Lori",mp3:"https://www.lori.tw/douyin.php",cover:"https://q2.qlogo.cn/headimg_dl?bs=2640341724&dst_uin=2640341724&dst_uin=2640341724&;dst_uin=2640341724&spec=100&url_enc=0&referer=bu_interface&term_type=PC",}
+];
+          var isRotate = 1;
+        </script>
+
+<script src="https://www.lori.tw/js/player.js"></script>
+
+<script>//改变列表的背景颜色(错开颜色)
+
+function bgChange(){
+	var lis= $(".lib");
+	for(var i=0; i<lis.length; i+=2)
+	lis[i].style.background = "rgba(246, 246, 246, 0.5)";
+}
+window.onload = bgChange;
+</script>
